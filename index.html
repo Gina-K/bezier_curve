@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Bezier curve</title>
+  <title>Кривая Безье</title>
 </head>
 <body>
+<main>
+  <h1>Кривая Безье</h1>
+  <p>Передвигайте контрольные точки мышью, чтобы изменить кривую.</p>
 
+  <div id="wrapper" style="border: 1px solid black; width: 450px; height: 500px">
+    <svg width="450" height="500" xmlns="http://www.w3.org/2000/svg">
+      <path id="curve" d="M20 480 C 220 480, 230 20, 430 20" stroke="#654062" fill="transparent" stroke-width="2"/>
+      <path id="feeder-1" d="M20 480 L 220 480" stroke="#ff9c71" fill="transparent" stroke-width="1"/>
+      <path id="feeder-2" d="M230 20 L 430 20" stroke="#ff9c71" fill="transparent" stroke-width="1"/>
+
+      <circle cx="20" cy="480" r="4" stroke="transparent" fill="#ff9c71" stroke-width="15" style="cursor: pointer"/>
+      <circle cx="220" cy="480" r="4" stroke="transparent" fill="#ff9c71" stroke-width="15" style="cursor: pointer"/>
+      <circle cx="230" cy="20" r="4" stroke="transparent" fill="#ff9c71" stroke-width="15" style="cursor: pointer"/>
+      <circle cx="430" cy="20" r="4" stroke="transparent" fill="#ff9c71" stroke-width="15" style="cursor: pointer"/>
+    </svg>
+  </div>
+</main>
 </body>
 </html>
